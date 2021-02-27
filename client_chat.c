@@ -7,7 +7,7 @@
 
 int main(int argc, char* argv[]) {
     int so;
-    char s[100];
+    char buffer[100];
     struct sockaddr_in ad;
 
     socklen_t ad_length = sizeof(ad);
@@ -31,12 +31,12 @@ int main(int argc, char* argv[]) {
 
         // send some data to server
         printf("Client>");
-        scanf("%s", s);
-        write(serv, s, strlen(s) + 1);
+        scanf("%s", buffer);
+        write(serv, buffer, strlen(buffer) + 1);
 
         // then it's server turn
-        read(serv, s, sizeof(s));
+        read(serv, buffer, sizeof(buffer));
 
-        printf("Server says: %s\n", s);
+        printf("Server says: %s\n", buffer);
     }
 }
