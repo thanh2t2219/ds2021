@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <winsock2.h>
-#include <ws2tcpip.h>
-#include <iphlpapi.h>
-#include <ws2def.h>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netdb.h>
 
 int main(int argc, char* argv[]) {
     int so;
