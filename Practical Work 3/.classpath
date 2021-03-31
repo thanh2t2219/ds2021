@@ -6,5 +6,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="lib/rmi_server.jar"/>
+	<classpathentry kind="lib" path="/home/thiet_1999/JavaNet/eclipse-workspace/rmi_file_client/lib/rmi_server.jar"/>
+	<classpathentry kind="lib" path="/home/thiet_1999/JavaNet/eclipse-workspace/rmi_file_client/lib/rmi_server_or.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
